@@ -103,7 +103,7 @@ int main() {
     // Fill original image
     for (int y = 0; y < imageOriginale.hauteur; y++) {
         for (int x = 0; x < imageOriginale.largeur; x++) {
-            imageOriginale.pixels[y][x] = (x + y) * 100;
+            imageOriginale.pixels[y][x] = (x + y) * 25; // valeurs <= 200 : reste dans la plage d'un unsigned char
         }
     }
 
